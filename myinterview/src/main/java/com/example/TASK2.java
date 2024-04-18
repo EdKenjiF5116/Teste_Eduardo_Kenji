@@ -7,7 +7,6 @@ package com.example;
  *
  */
 
-
 public class TASK2 {
 
 }

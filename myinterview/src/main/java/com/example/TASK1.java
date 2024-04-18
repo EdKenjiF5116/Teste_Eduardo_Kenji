@@ -1,5 +1,7 @@
 package com.example;
+
 import java.util.Scanner;
+
 /**
  * 
  *
@@ -13,6 +15,32 @@ import java.util.Scanner;
  * racecar.
  */
 public class TASK1 {
-     
- 
+
+    public static boolean isPalindrome(String str) {
+        str = str.toLowerCase();
+        int left = 0;
+        int right = str.length() - 1;
+
+        while (left < right) {
+            if (str.charAt(left) != str.charAt(right)) {
+                return false;
+            }
+            left++;
+            right--;
+        }
+        return true;
+    }
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Informe a string:");
+        String input = scanner.nextLine();
+        scanner.close();
+
+        if (isPalindrome(input)) {
+            System.out.println("A string informada é um palindromo.");
+        } else {
+            System.out.println("A string informada não é um palindromo.");
+        }
+    }
 }
