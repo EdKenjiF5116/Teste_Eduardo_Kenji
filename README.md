@@ -1,4 +1,22 @@
-QUERY'S DO MYSQL
+QUERY'S DO MYSQL(tive problemas em relação a esse, não consegui conectar direito já que toda vez que eu tentava dava como host inexistente)
+
+Quantidade de Funcionários por Sexo:
+SELECT sexo, COUNT(*) AS qtde_funcionarios
+FROM employees
+GROUP BY sexo;
+
+Funcionários Distintos por Sexo, Ano e Ano de Nascimento:
+SELECT sexo, ano, ano_nascimento, COUNT(DISTINCT employee_id) AS qtde_funcionarios_distintos
+FROM employees
+GROUP BY sexo, ano, ano_nascimento;
+
+Média, Mínimo e Máximo de Salário por Sexo:
+SELECT sexo,
+       AVG(salary) AS media_salario,
+       MIN(salary) AS salario_minimo,
+       MAX(salary) AS salario_maximo
+FROM employees
+GROUP BY sexo;
 
 ANALISE DOS GRÁFICOS
 Analisei os seguintes gráficos (os prints dos gráficos estão na pastal img dentro da pasta assets (acima da SRC) 
