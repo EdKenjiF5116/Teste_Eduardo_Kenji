@@ -37,7 +37,6 @@ public class TASK4 {
             String responseData = response.toString();
             int maleCount = 0;
             int femaleCount = 0;
-            // Aqui você precisa escrever o código para contar os registros para cada gênero
 
             AmazonS3 s3Client = AmazonS3ClientBuilder.standard().build();
             String bucketName = "interview-digiage";
