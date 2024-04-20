@@ -5,7 +5,7 @@ import org.springframework.web.bind.annotation.*;
 @SpringBootApplication
 @RestController
 @RequestMapping("/users")
-public class UserAPI {
+public class TASK5 {
 
     // Implementando as operações CRUD básicas
 
@@ -34,7 +34,7 @@ public class UserAPI {
     }
 
     public static void main(String[] args) {
-        SpringApplication.run(UserAPI.class, args);
+        SpringApplication.run(TASK5.class, args);
     }
 }
 
